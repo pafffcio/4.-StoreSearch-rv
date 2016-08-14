@@ -154,7 +154,7 @@ class LandscapeViewController: UIViewController {
       let button = UIButton(type: .Custom)
       button.setBackgroundImage(UIImage(named: "LandscapeButton"), forState: .Normal)
       button.tag = 2000 + index
-      button.addTarget(self, action: Selector("buttonPressed:"), forControlEvents: .TouchUpInside)
+      button.addTarget(self, action: #selector(LandscapeViewController.buttonPressed(_:)), forControlEvents: .TouchUpInside)
 
       button.frame = CGRect(
         x: x + paddingHorz,
